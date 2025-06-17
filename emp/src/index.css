@@ -1,0 +1,49 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0 10px;
+}
+
+:root{
+    --btn: #dbdbdb;
+    --btn-hover: #cacaca;
+    --item-bg: #f0f0f0;
+    --model-bg: rgba(141,141,141,0.5)
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header > button{
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--btn);
+    cursor: pointer;
+}
+
+.header > button:hover{
+    background-color: var(--btn-hover);
+}
+
+.employees{
+    display: flex;
+}
+
+.employees > div{
+    border: 1px solid black;
+    overflow-y: scroll;
+    height: 450px;
+}
+
+
+.empname
+.empnameSingle{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+
