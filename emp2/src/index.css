@@ -1,0 +1,88 @@
+body {
+    font-family: sans-serif;
+    padding: 1 10px;
+}
+
+:root {
+    --btn: #dbdbdb;
+    --btn-hover: #cacaca;
+    --item-bg: #f0f0f0;
+    --modal-bg: rgba(141, 141, 141, 0.541)
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header > button {
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--btn);
+    cursor: pointer;
+}
+
+.header>button:hover {
+    background-color: var(--btn-hover);
+}
+
+.employee {
+    display: flex;
+}
+
+.employee > div {
+    border: 1px solid black;
+    overflow-y: scroll;
+    height: 450px;
+}
+.empname{
+    width: 30%;
+}
+.empSingle{
+    width: 70%;
+}
+
+.empname,
+.empSingle {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* .selected {
+    background-color: #b3d4fc;
+    font-weight: bold;
+} */
+
+
+.empNameTitle,
+.empSingleTitle {
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+.empnameList{
+    display: flex;
+    flex-direction: column;
+}
+
+.empnameitem{
+    cursor: pointer;
+    padding: 10px 15px;
+    margin-bottom: 5px;
+    text-align: center;
+    background-color: var(--item-bg);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.empnameitem:hover,
+.selected{
+    background-color: var(--btn);
+}
